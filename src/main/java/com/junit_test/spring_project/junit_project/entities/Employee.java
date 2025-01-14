@@ -6,8 +6,6 @@ import lombok.*;
 @Entity
 @Table(name = "employee")
 @NoArgsConstructor
-@Getter
-@Setter
 public class Employee {
 
     @Id
@@ -21,6 +19,37 @@ public class Employee {
 
     private double salary;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 //    @ManyToOne
 //    @JoinColumn(name = "supervisor_id")
 //    private Supervisor supervisor;
